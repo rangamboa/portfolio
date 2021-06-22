@@ -33,10 +33,10 @@ header {
 h1 {
     text-align: var(--alignBig);
     color: black;
-    width: 300px;
+    width: 350px;
     font-size: 40px;
     background-color: burlywood;
-    padding: 15px;
+    padding: 2px 10px 2px 2px;
 
 }
 
@@ -46,14 +46,16 @@ nav ul {
     align-items: center;
     justify-content: space-evenly;
     padding-right: 50px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 nav li {
     color: burlywood;
-    border-bottom: 3px solid burlywood;
+    border-bottom: 2px solid burlywood;
     list-style-type: none;
-    margin-left: 25px;
+    margin-left: 10px;
+    padding: 3px 7px 3px 7px;
+    
 }
 
 .splashImage {
@@ -71,8 +73,9 @@ nav li {
     margin: 125px 50px 0px 66%;
     font-size: 25px;
     font-style:italic;
-    padding: 10px;
+    padding: 7px;
     background-color: burlywood;
+    opacity: 80%;
 }
 
 main {
