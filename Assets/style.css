@@ -1,7 +1,7 @@
 :root {
     --alignBig: right;
     --highlight: #fff;
-    --sectionbg: #999;
+    --sectionbg: #333;
     --sectionborder: 1px solid red;
 }
 
@@ -12,7 +12,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #111;
 }
 
 header, footer, aside {
@@ -28,15 +28,28 @@ header {
     justify-content: space-between;
 }
 
+h1 {
+    text-align: var(--alignBig);
+    color: black;
+    width: 300px;
+    font-size: 40px;
+    background-color: burlywood;
+    padding: 15px;
+
+}
+
 nav ul {
     display: flex;
-    align-self: center;
+    align-self:baseline;
+    align-items: center;
     justify-content: space-evenly;
-    border: 1px solid black;
+    padding-right:50px;
+    margin-top:50px;
 }
 
 nav li {
-    border: 1px solid red;
+    color: burlywood;
+    border-bottom: 3px solid burlywood;
     list-style-type: none;
     margin-left: 25px;
 }
@@ -44,7 +57,7 @@ nav li {
 .splashImage {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: end;
     justify-content: right;
     width: 100%;
     height: 250px;
@@ -53,9 +66,9 @@ nav li {
 }
 
 .splashImage p {
-    justify-content: end;
-    font-size: 30px;
-    padding: 5px;
+    margin: 150px 50px 0px 66%;
+    font-size: 25px;
+    padding: 10px;
     background-color: burlywood;
 }
 
@@ -77,13 +90,6 @@ main {
     padding: 5px;
     margin: 15px 5px 15px 5px;
     min-height: 150px;
-}
-
-h1 {
-    text-align: var(--alignBig);
-    color: var(--highlight);
-    font-size: 40px;
-    border: 1px solid black;
 }
 
 0h2 {
