@@ -1,0 +1,92 @@
+:root {
+    --middle: center;
+    --highlight: #fff;
+    --sectionbg: #999;
+    --sectionborder: 1px solid #666;
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: black;
+    padding: 10px;
+}
+
+header, footer, aside {
+    border: var(--sectionborder);
+    border-radius: 15px;
+    background-color: var(--sectionbg);
+    padding: 5px;
+    margin: 5px;
+}
+
+main {
+    background-color: #ddd;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--sectionbg);
+    width:33%;
+    border: var(--sectionborder);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 15px 5px 15px 5px;
+    min-height: 150px;
+}
+
+h1 {
+    text-align: var(--middle);
+    color: var(--highlight);
+    font-size: 30px;
+}
+
+h2 {
+    position: relative;
+    bottom: 20px;
+    text-align: left;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0px 10% 0px 10%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+aside p, footer p {
+    text-align: center;
+    color: var(--highlight);
+    font-size: 16px;
+}
+
+.card p {
+    text-align: left;
+    color: var(--highlight);
+    font-size: 16px;
+}
+
+footer {
+    border: 1px solid #666;
+    border-radius: 15px;
+    background-color: var(--sectionbg);
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+      width:50%;
+    }
+  }
+  
+@media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  }
