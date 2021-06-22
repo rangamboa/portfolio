@@ -1,8 +1,8 @@
 :root {
-    --middle: center;
+    --alignBig: right;
     --highlight: #fff;
     --sectionbg: #999;
-    --sectionborder: 1px solid #666;
+    --sectionborder: 1px solid red;
 }
 
 * {
@@ -10,16 +10,53 @@
 }
 
 body {
-    background-color: black;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
 }
 
 header, footer, aside {
     border: var(--sectionborder);
-    border-radius: 15px;
     background-color: var(--sectionbg);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    align-self:center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+nav li {
+    border: 1px solid red;
+    list-style-type: none;
+    margin-left: 25px;
+}
+
+.splashImage {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: right;
+    width: 100%;
+    height: 250px;
+    background-image: url('../Images/coffee.jpg');
+    background-size: cover;
+}
+
+.splashImage p {
+    justify-content: end;
+    font-size: 30px;
     padding: 5px;
-    margin: 5px;
+    background-color: burlywood;
 }
 
 main {
@@ -43,12 +80,13 @@ main {
 }
 
 h1 {
-    text-align: var(--middle);
+    text-align: var(--alignBig);
     color: var(--highlight);
-    font-size: 30px;
+    font-size: 40px;
+    border: 1px solid black;
 }
 
-h2 {
+0h2 {
     position: relative;
     bottom: 20px;
     text-align: left;
