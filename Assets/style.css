@@ -45,6 +45,21 @@ h2 {
     background-color: gray;
 }
 
+.projects p {
+    position:relative;
+    display: inline;
+    width:auto;
+    max-height:30px;
+    bottom: 5%;
+    left:3px;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    background-color: lightslategrey;
+    opacity: 80%;
+}
+
 nav ul, footer ul {
     display: flex;
     align-self: center;
@@ -84,10 +99,6 @@ aside, main, footer {
     align-items:stretch;
 }
 
-ofooter {
-border:1px solid blue;
-}
-
 .container {
     width:100%;
     border: 1px dashed green;
@@ -100,7 +111,7 @@ border:1px solid blue;
     margin: 20px 50px 20px 150px;
 }
 
-p {
+p.aboutText {
     width: 85%;
     border-left:5px solid burlywood;
     padding-left: 30px;
@@ -109,6 +120,15 @@ p {
     font-size: 14px;
 }
 
+p.footerText {
+    width: 85%;
+    border-left:5px solid burlywood;
+    padding-left: 30px;
+    text-align: left;
+    color: black;
+    font-size: 14px;
+    background-color: brown;
+}
 .splashImage p {
     width: 300px;
     margin: 125px 50px 0px 66%;
@@ -119,7 +139,7 @@ p {
     opacity: 80%;
 }
 
-.projects {
+.projectSection {
     width: 85%;
     display: flex;
     flex-direction: row;
@@ -131,22 +151,58 @@ p {
     padding-left: 30px;
 }
 
-.projects img {
-    border: 2px solid lightslategrey;
-    margin: 3px;
-}
-
 .projectMain {
     flex-basis: 100%;
     flex-grow: 1;
     width:100%;
-    height:30%;
+    height:200px;
+    background-image: url('../Images/project01.jpg');
+    background-size: 100% 200px;
+    border: 3px solid lightslategrey;
+    margin-bottom: 15px;
 }
 
 .projectOther {
     flex-basis: auto;
+    flex-grow: 1;
+    width: 48%;
+    flex-basis: auto;
     width:48%;
     height:10%;
+    min-height: 100px;
+    border: 3px solid lightslategrey;
+    margin-bottom: 15px;
+}
+
+.projectOther img {
+    width: 100%;
+    height: 100px;
+    z-index: 0;
+}
+
+.projectText {
+    background-color: lightslategrey;
+    position: relative;
+    top: -50%;
+    width:150px;
+    z-index: 1;
+}
+
+.projectText h3 {
+    display:inline;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.projectText span {
+    odisplay: inline;
+    font-size: 10px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 @media screen and (max-width: 992px) {
