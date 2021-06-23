@@ -133,14 +133,16 @@ p.aboutText, p.footerText {
 
 /* styling for "catchy subtitle" */
 
-.splashImage p {
-    width: 300px;
-    margin: 125px 50px 0px 66%;
+.splashImage span {
+    min-width: 255px;
+    margin: 125px 50px 0px 75%;
     font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-style:italic;
     padding: 7px;
     background-color: burlywood;
-    opacity: 80%;
+    opacity: 66%;
+
 }
 
 /* these styles are for the projects in the Work section */
@@ -235,6 +237,10 @@ a {
 
 a:hover {
     color: black;
+}
+
+nav a:hover {
+    color: white;  
 }
 
 .projectOther:hover {
