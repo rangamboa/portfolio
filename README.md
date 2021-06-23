@@ -16,5 +16,13 @@ I used several tutorial websites on the web to assist in coding for this assignm
 
 * as well as the tutorials and sample code gone over in class sessions.
 
+## Link to Deployed Github Page
+
+[Portfolio](https://rangamboa.github.io/portfolio/)
+
+## Screenshots
+
+![top](Images/screenshot01.jpg)
+![bottom](Images/screenshot02.jpg)
 - - -
 © 2021 Ran Gamboa
