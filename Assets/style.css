@@ -100,10 +100,12 @@ aside, main, footer {
     flex-wrap: nowrap;
     justify-content:center;
     align-items:stretch;
+    oborder: 1px dotted green;
+    margin-bottom: 10px;
 }
 
 #contactMe {
-    width: 100%;
+    min-width: 300px;
 }
 
 /* styling subsections */
@@ -113,25 +115,14 @@ aside, main, footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:center;
+    justify-content: left;
     align-items:stretch;
     margin: 0px 50px 20px 0px;
 }
 
-/* this is styling for the text in the About Me section. */
+/* this is styling for the text in the About Me and Footer sections. */
 
-p.aboutText {
-    width: 85%;
-    border-left:5px solid burlywood;
-    padding-left: 30px;
-    text-align: left;
-    color: black;
-    font-size: 14px;
-}
-
-/* styling for contact information text */
-
-p.footerText {
+p.aboutText, p.footerText {
     width: 85%;
     border-left:5px solid burlywood;
     padding-left: 30px;
@@ -172,9 +163,9 @@ p.footerText {
     height:200px;
     background-image: url('../Images/project01.jpg');
     background-size: 100% 200px;
-    oborder: 3px solid magenta;
     margin-bottom: 15px;
     opacity: 80%;
+    border: 3px solid lightslategrey;
     z-index: 1;
 }
 
@@ -242,7 +233,12 @@ a {
     color: lightslategrey;
 }
 
-.projectOther a:hover {
+a:hover {
+    color: black;
+}
+
+.projectOther:hover {
+    border: 3px solid burlywood;
     opacity: 100%;
 }
 
