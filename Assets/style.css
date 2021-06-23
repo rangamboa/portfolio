@@ -2,7 +2,6 @@
     --alignBig: right;
     --highlight: #fff;
     --sectionbg: #333;
-    --sectionborder: 0px solid red;
 }
 
 * {
@@ -78,6 +77,16 @@ nav li, footer li {
     height: 200px;
     background-image: url('../Images/coffee.jpg');
     background-size: cover;
+    margin-bottom: 20px;
+}
+
+/* styling for profile pic */
+
+.profilePic {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 3px solid lightslategrey;
 }
 
 /* styling for large sections */
@@ -93,17 +102,20 @@ aside, main, footer {
     align-items:stretch;
 }
 
+#ocontactMe {
+    width: 100%;
+}
+
 /* styling subsections */
 
 .container {
     width:100%;
-    background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content:center;
     align-items:stretch;
-    margin: 20px 50px 20px 150px;
+    margin: 0px 50px 20px 0px;
 }
 
 /* this is styling for the text in the About Me section. */
@@ -225,7 +237,7 @@ p.footerText {
 
 a {
     text-decoration: none;
-    color: lightslategrey
+    color: lightslategrey;
 }
 
 /* restyling for different sized screens and media */
