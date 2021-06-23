@@ -26,6 +26,8 @@ header {
     margin: 0px;
 }
 
+/* header text */
+
 h1 {
     text-align: var(--alignBig);
     color: black;
@@ -35,6 +37,8 @@ h1 {
     padding: 2px 10px 2px 2px;
 }
 
+/* main section headings */
+
 h2 {
     text-align: var(--alignBig);
     color: black;
@@ -42,23 +46,9 @@ h2 {
     word-wrap: normal;
     font-size: 40px;
     padding: 0px 10px;
-    obackground-color: gray;
 }
 
-.projects p {
-    position:relative;
-    display: inline;
-    width:auto;
-    max-height:30px;
-    bottom: 5%;
-    left:3px;
-    text-align: left;
-    color: black;
-    font-size: 20px;
-    padding: 5px;
-    background-color: lightslategrey;
-    opacity: 80%;
-}
+/* navigation styles for both header and footer menus */
 
 nav ul, footer ul {
     display: flex;
@@ -77,6 +67,8 @@ nav li, footer li {
     padding: 3px 7px 3px 7px;
 }
 
+/* styling the big splash image */
+
 .splashImage {
     display: flex;
     flex-direction: row;
@@ -87,6 +79,8 @@ nav li, footer li {
     background-image: url('../Images/coffee.jpg');
     background-size: cover;
 }
+
+/* styling for large sections */
 
 aside, main, footer {
     width: 100%;
@@ -99,6 +93,8 @@ aside, main, footer {
     align-items:stretch;
 }
 
+/* styling subsections */
+
 .container {
     width:100%;
     background-color: white;
@@ -110,6 +106,8 @@ aside, main, footer {
     margin: 20px 50px 20px 150px;
 }
 
+/* this is styling for the text in the About Me section. */
+
 p.aboutText {
     width: 85%;
     border-left:5px solid burlywood;
@@ -118,6 +116,8 @@ p.aboutText {
     color: black;
     font-size: 14px;
 }
+
+/* styling for contact information text */
 
 p.footerText {
     width: 85%;
@@ -128,6 +128,8 @@ p.footerText {
     font-size: 14px;
 }
 
+/* styling for "catchy subtitle" */
+
 .splashImage p {
     width: 300px;
     margin: 125px 50px 0px 66%;
@@ -137,6 +139,8 @@ p.footerText {
     background-color: burlywood;
     opacity: 80%;
 }
+
+/* these styles are for the projects in the Work section */
 
 .projectSection {
     width: 85%;
@@ -223,6 +227,8 @@ a {
     text-decoration: none;
     color: lightslategrey
 }
+
+/* restyling for different sized screens and media */
 
 @media screen and (max-width: 992px) {
     .projectOther {
