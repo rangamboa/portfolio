@@ -1,137 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/style.css">
-    <title>Ran Gamboa | Web Developer</title>
+    <meta name="description" content="Ran Gamboa's Web Developer Profile Page.">
+
+    <title>Ran Gamboa | Web Deveoper</title>
+
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/pure/2.0.6/build/pure-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="./Assets/style.css">
 </head>
 
 <body>
-    <!-- This section contains header text and menu navigation. -->
-    <header>
 
-        <h1>Ran Gamboa</h1>
+<div id="layout" class="pure-g">
 
-        <nav>
-            <ul>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#myWork">Work</a></li>
-                <li><a href="#contactMe">Contact Me</a></li>
-                <li><a href="#myResume">Resume</a></li>
-            </ul>
-        </nav>
-        
-    </header>
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
 
-    <!-- This contains a splash image of coffee beans and a tagline. -->
+        <div class="header">
 
-    <div class="splashImage">
-        <span>slightly overcaffeinated</span>
+            <h1 id="myName">Ran Gamboa</h1>
+            <h3 id="tagline">[web developer,<br>usually overcaffeinated]</h3>
+
+            <img id="profilePic" src="Images/rangamboa_sm.jpg" alt="Ran Gamboa profile photo">
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="http://purecss.io">about me</a></li>
+                    <li class="nav-item"><a href="http://purecss.io">projects</a></li>
+                    <li class="nav-item"><a href="http://purecss.io">resume</a></li>
+                    <li class="nav-item"><a href="http://purecss.io">contact me</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
     </div>
 
-    <aside>
+    <div class="content pure-u-1 pure-u-md-3-4">
 
-        <div class="container">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Pinned Post</h1>
 
-            <h2 id="aboutMe">About Me</h2>
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="/img/common/tilo-avatar.png">
 
-            <p class="aboutText">
-                Hello! I'm Ran, a web developer. I build websites.<br /><br/>
-       
-                The best websites are nice to look at, easy to navigate, simple to read and possibly fun to use! When a user returns to the website to accomplish the task at hand, I've done my job.<br /><br />
-                
-                I create applications using a variety of methodologies and languages. Picking up a new way to build isn't a problem for me. I enjoy developing both front- and back-end software applications.<br /><br/>
-                
-                Please take a look at my projects below. They range from games to more serious business applications used by both local and international firms! If you'd be interested in working with me, please drop me a line below. Thanks for looking!     
-            </p>
+                        <h2 class="post-title">Introducing Pure</h2>
 
+                        <p class="post-meta">
+                            By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Yesterday at CSSConf, we launched Pure – a new CSS library. Phew! Here are the <a href="https://speakerdeck.com/tilomitra/pure-bliss">slides from the presentation</a>. Although it looks pretty minimalist, we’ve been working on Pure for several months. After many iterations, we have released Pure as a set of small, responsive, CSS modules that you can use in every web project.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="posts">
+                <h1 class="content-subhead">Recent Posts</h1>
+
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Eric Ferraiuolo&#x27;s avatar" class="post-avatar" src="/img/common/ericf-avatar.png">
+
+                        <h2 class="post-title">Everything You Need to Know About Grunt</h2>
+
+                        <p class="post-meta">
+                            By <a class="post-author" href="#">Eric Ferraiuolo</a> under <a class="post-category post-category-js" href="#">JavaScript</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Reid Burke&#x27;s avatar" class="post-avatar" src="/img/common/reid-avatar.png">
+
+                        <h2 class="post-title">Photos from CSSConf and JSConf</h2>
+
+                        <p class="post-meta">
+                            By <a class="post-author" href="#">Reid Burke</a> under <a class="post-category" href="#">Uncategorized</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <div class="post-images pure-g">
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                <a href="http://www.flickr.com/photos/uberlife/8915936174/">
+                                    <img alt="Photo of someone working poolside at a resort"
+                                         class="pure-img-responsive"
+                                         src="http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg">
+                                </a>
+
+                                <div class="post-image-meta">
+                                    <h3>CSSConf Photos</h3>
+                                </div>
+                            </div>
+
+                            <div class="pure-u-1 pure-u-md-1-2">
+                                <a href="http://www.flickr.com/photos/uberlife/8907351301/">
+                                    <img alt="Photo of the sunset on the beach"
+                                         class="pure-img-responsive"
+                                         src="http://farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg">
+                                </a>
+
+                                <div class="post-image-meta">
+                                    <h3>JSConf Photos</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="post">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="Andrew Wooldridge&#x27;s avatar" class="post-avatar" src="/img/common/andrew-avatar.png">
+
+                        <h2 class="post-title">YUI 3.10.2 Released</h2>
+
+                        <p class="post-meta">
+                            By <a class="post-author" href="#">Andrew Wooldridge</a> under <a class="post-category post-category-yui" href="#">YUI</a>
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            We are happy to announce the release of YUI 3.10.2! You can find it now on the Yahoo! CDN, download it directly, or pull it in via npm. We’ve also updated the YUI Library website with the latest documentation.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>
+                        <li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Twitter</a></li>
+                        <li class="pure-menu-item"><a href="http://github.com/pure-css/pure/" class="pure-menu-link">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </div>
 
-    </aside>
-
-    <main>
-        <!-- This section highlights various projects. -->
-        <div class="container">
-
-          <h2 id="myWork">Work</h2>
-
-          <div class="projectSection">
-              <div class="projectMain">
-                <a href="#" target="_new">
-                <div class="projectMainText">
-                    <h3>Beachcomber</h3><br />
-                    <span>MERN Stack</span>
-                </div>
-                </a>
-            </div>
-            
-
-            <div class="projectOther">
-                <a href="#" target="_new"><img src="Images/project02.jpg" alt="Project 1" /></a>
-                <div class="projectText">
-                  <h3>RCube</h3><br />
-                  <span>Node.js</span>
-                </div>
-            </div>
-        
-            <div class="projectOther">
-                <a href="#" target="_new"><img src="Images/project03.jpg" alt="Project 1" /></a>
-                <div class="projectText">
-                  <h3>Leafy Calc</h3><br />
-                  <span>MERN Stack</span>
-                </div>
-            </div>
-
-            <div class="projectOther">
-                <a href="#" target="_new"><img src="Images/project04.jpg" alt="Project 1" /></a>
-                <div class="projectText">
-                  <h3>DroneCity</h3><br />
-                  <span>HTML/CSS</span>
-                </div>
-            </div>
-
-            <div class="projectOther">
-                <a href="#" target="_new"><img src="Images/project05.jpg" alt="Project 1" /></a>
-                <div class="projectText">
-                  <h3>GearHeadXL</h3><br />
-                  <span>React</span>
-                </div>
-            </div>
-
-          </div>
-
-        </div>
-
-    </main>
-
-    <footer>
-
-        <!-- This section contains contact information and social media links. -->
-
-        <div class="container">
-
-            <h2 id="contactMe">Contact Me</h2>
-
-            <p class="footerText">&nbsp;</p>
-
-            <img class="profilePic" src="Images/rangamboa_sm.jpg" alt="profile photo" />
-
-            <ul>
-                <li><a href="#" target="_new">206.979.2902</a></li>
-                <li><a href="#" target="_new">ran@rangamboa.com</a></li>
-                <li><a href="#" target="_new">GitHub</a></li>
-                <li><a href="#" target="_new">Goodreads</a></li>
-            </ul>
-            
-        </div>
-
-    </footer>
-
-
-
-
+</div>
 
 </body>
 
