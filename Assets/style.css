@@ -60,6 +60,10 @@ h3 {
     font-style: italic;
 }
 
+nav {
+    margin: 30px auto;
+}
+
 .nav-list {
     margin: 0px;
     padding: 0px;
@@ -112,12 +116,12 @@ footer {
 
 footer .container {
     display:flex;
-    align-content: center;
+    align-content:center;
 }
 
 footer ul {
     margin: 0px;
-    padding: 10px 0px 0px 30px;
+    padding: 10px 0px 0px 10px;
 }
 
 footer li {
