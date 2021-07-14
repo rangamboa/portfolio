@@ -52,7 +52,7 @@ h3 {
 
 .sidebar {
     background-color: rgb(54, 87, 51);
-    background-image: url("../Images/profile_banner_portrait.jpg");
+    background-image: url('../Images/profile_banner_portrait.jpg');
     color: #fff;
 }
 
