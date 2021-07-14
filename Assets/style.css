@@ -9,6 +9,8 @@ a {
     text-decoration: none;
     color: rgb(54, 87, 51);
     border-bottom: 2px solid rgb(54, 87, 51);
+    transition: color 0.25s;
+    transition: border 0.25s;
 }
 
 a:hover, a:focus {
@@ -34,20 +36,24 @@ h3 {
     width: 150px;
     height: 150px;
     border: 5px solid lightgrey;
-    border-radius: 15px;
+    border-radius: 20px;
 }
+
 
 .header {
     text-align: center;
     top: auto;
     margin: 5px auto;
+    padding: 25px;
+    min-width: 175px;
+    background-color: rgb(54, 87, 51);
+    opacity: 85%;
 }
 
 .sidebar {
-    background: rgb(54, 87, 51);
+    background-color: rgb(54, 87, 51);
+    background-image: url("../Images/profile_banner_portrait.jpg");
     color: #fff;
-    border-left: 5px solid lightgrey;
-    border-right: 5px solid lightgrey;
 }
 
 #myName, #tagline {
@@ -73,13 +79,15 @@ nav {
 .nav-item {
     display: block;
     *display: inline;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .nav-item a {
     border-bottom: 2px solid rgb(176, 219, 187);
     color: rgb(176, 219, 187);
-    letter-spacing: 2px;
+    letter-spacing: -0.5px;
+    transition: color 0.25s;
+    transition: border 0.25s;
 }
 
 .nav-item a:hover,
@@ -99,15 +107,34 @@ nav {
 }
 
 .post-title {
+    width: 66%;
     font-size: 1.75em;
     letter-spacing: -0.05em;
     color: rgb(54, 87, 51);
-    margin-bottom: 0.2em;
+    margin-bottom: 0.5em;
+    padding-bottom: 3px;
+    border-bottom: 5px solid lightgrey;
 }
 
 .post-description {
     color: #444;
-    line-height: 1.8em;
+    line-height: 1.75em;
+    margin-left: 10px;
+}
+
+#projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #eee;
+}
+
+.project {
+    omin-width: 50%;
+    omax-width: 100%;
+    border: 1px solid red;
 }
 
 footer {
@@ -115,8 +142,8 @@ footer {
 }
 
 footer .container {
-    display:flex;
-    align-content:center;
+    display: flex;
+    align-content: center;
 }
 
 footer ul {
@@ -126,7 +153,7 @@ footer ul {
 
 footer li {
     list-style-type: none;
-    margin-bottom: 3px;
+    font-size: 90%;
 }
 
 @media (min-width: 48em) {
@@ -135,6 +162,7 @@ footer li {
         position: fixed;
         top: 0;
         bottom: 0;
+        border-right: 5px solid lightgrey;
     }
 
     .content {
@@ -144,8 +172,9 @@ footer li {
     }
 
     .header {
-        margin: 80% 2em 0;
+        margin: 40% 2em 0;
         text-align: right;
+        border-radius: 20px;
     }
 
 
