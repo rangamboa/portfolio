@@ -1,20 +1,16 @@
 # Personal Portfolio
-
 ## Task
 
-To build a portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. This is especially important for those developers like me who will just be starting out in the industry and need a way to showcase the projects that have been successful.
-
-This assignment was to attempt to emulate the mock website shown in the homework instructions, including general layout and functionality.
-
+I created a portfolio of work that showcases the skills I've learned so far in Web Dev bootcamp. This will be instrumental in helping me find employers looking to fill a part-time or full-time position. Since I will just be starting out in the industry, a well-designed and functional portfolio is an especially important way to showcase the projects that have been successful.
 ## Resources
 
-I used several tutorial websites on the web to assist in coding for this assignment, such as:
+I used the Pure CSS library to style the site, as well as the lessons learned previous bootcamp lessons.
 
 * W3Schools
 
 * MDN
 
-* as well as the tutorials and sample code gone over in class sessions.
+* Pure CSS
 
 ## Link to Deployed Github Page
 
@@ -22,7 +18,6 @@ I used several tutorial websites on the web to assist in coding for this assignm
 
 ## Screenshots
 
-![top](Images/screenshot01.jpg)
-![bottom](Images/screenshot02.jpg)
+![Portfolio Screenshot](Images/portfolio-screenshot.jpg)
 - - -
 © 2021 Ran Gamboa
