@@ -142,7 +142,6 @@ nav {
 .project:hover {
     filter: none;
     transition: filter 0.5s ease-in-out;
-    cursor: pointer;
 }
 
 .project p {
@@ -154,6 +153,10 @@ nav {
     background-color: lightgrey;
     color: black;
     border-radius: 0px 0px 5px 5px;
+}
+
+.project span {
+    font-size: 75%;
 }
 
 #project1 {
