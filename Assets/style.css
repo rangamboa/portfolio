@@ -52,7 +52,7 @@ h3 {
 
 .sidebar {
     background-color: rgb(54, 87, 51);
-    background-image: url('../Images/profile_banner_portrait.jpg');
+    background-image: url('./Images/profile_banner_portrait.jpg');
     color: #fff;
 }
 
@@ -162,22 +162,22 @@ nav {
 }
 
 #project1 {
-    background-image: url('../Images/pic_wd.jpg');
+    background-image: url('./Images/pic_wd.jpg');
     background-size: cover;
 }
 
 #project2 {
-    background-image: url('../Images/pic_rps.jpg');
+    background-image: url('./Images/pic_rps.jpg');
     background-size: cover;
 }
 
 #project3 {
-    background-image: url('../Images/pic_ws.jpg');
+    background-image: url('./Images/pic_ws.jpg');
     background-size: cover;
 }
 
 #project4 {
-    background-image: url('../Images/pic_cr.jpg');
+    background-image: url('./Images/pic_cr.jpg');
     background-size: cover;
 }
 
