@@ -133,8 +133,44 @@ nav {
 .project {
     margin: 0em 0.07em 0.4em 0em;
     max-width: 100%;
+    min-height: 150px;
     border: 5px solid lightgrey;
     border-radius: 10px;
+    filter: grayscale(66%);
+}
+
+.project:hover {
+    filter: none;
+    transition: filter 0.5s ease-in-out;
+}
+
+.project span {
+    margin: 8px;
+    padding: 8px;
+    font-size: 125%;
+    background-color: lightgrey;
+    color: black;
+    border-radius: 5px;
+}
+
+#project1 {
+    background-image: url('../Images/pic_wd.jpg');
+    background-size: cover;
+}
+
+#project2 {
+    background-image: url('../Images/pic_rps.jpg');
+    background-size: cover;
+}
+
+#project3 {
+    background-image: url('../Images/pic_ws.jpg');
+    background-size: cover;
+}
+
+#project4 {
+    background-image: url('../Images/pic_cr.jpg');
+    background-size: cover;
 }
 
 footer {
