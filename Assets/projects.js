@@ -31,19 +31,23 @@ const projectsArray =
 
 for (i = 0; i < projectsArray.length; i++) {
    
-    // Generate the div block for each project.
+    // Build the div block for each project.
     let block = '<div class="project pure-u-1 pure-u-md-1-2" id="project'+ i +'">';
     block += '<p>' + projectsArray[i][0] + '<br>';
     block += '<span><a href="' + projectsArray[i][1] + '" target="_new">deployed site</a>';
     block += ' &middot; <a href="' + projectsArray[i][2] + '" target="_new">GitHub repo</a>';
-    block += ' &middot; <a href="' + projectsArray[i][2] + '" target="_new">screenshot</a></span></p></div>';
+    block += ' &middot; <a href="#open-screenshot-' + projectsArray[i][3] + '" target="_new">screenshot</a></span></p></div>';
 
+    // Build a modal to dynamically display a screenshot for each project.
+    block +='<div id="open-screenshot-' + projectsArray[i][3] + '" class="modal-window"><div>';
+    block +='<a href="#modal-close" title="close" class="moodal-close">close</a>';
+    block +='<h2>screenshot of ' + projectsArray[i][0] + '</h2><img src="./Images/Projects/screenshot-' + projectsArray[i][3] + '.jpg" style="width:700px;" title="screenshot of ' + projectsArray[i][0] + '"></div></div>';
+
+    // Generate the div.
     projectsDiv.innerHTML+=block;
 
     // Assign an ID to each project div and give it a unique background image.
     bgDiv = document.getElementById('project'+i);
-
     let bgUrl = './Images/Projects/splash-' + projectsArray[i][3] + '.jpg';
-
     bgDiv.style.backgroundImage = 'url("'+bgUrl+'")';
 }
