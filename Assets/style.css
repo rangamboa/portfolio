@@ -15,7 +15,7 @@ a {
 
 a:hover, a:focus {
     text-decoration: none;
-    color: rgb(176, 219, 187);
+    ocolor: rgb(176, 219, 187);
     border-bottom: 2px solid rgb(176, 219, 187);}
 
 h3 {
@@ -160,31 +160,37 @@ nav {
 }
 
 .project span a:hover {
-    background-color: rgb(54, 87, 51);
+    obackground-color: rgb(54, 87, 51);
 }
 
-footer {
-    padding: 1em 0;
-}
-
-footer .container {
+#contactMe .container {
     display: flex;
     align-content: center;
 }
 
-footer ul {
+#contactMe ul {
     margin: 0px;
     padding: 10px 0px 0px 10px;
 }
 
-footer li {
+#contactMe li {
     list-style-type: none;
     font-size: 90%;
 }
 
+footer div {
+    width: 100%;
+    color: white;
+    background-color: rgba(54, 87, 51, 0.75);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+
 .modal-window {
     position: fixed;
-    background-color: rgba(200, 200, 200, 0.75);
+    background-color: rgba(61, 61, 61, 0.66);
     top: 0;
     right: 0;
     bottom: 0;
@@ -192,31 +198,23 @@ footer li {
     z-index: 999;
     opacity: 0;
     pointer-events: none;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
-  .modal-window:target {
+}
+
+.modal-window:target {
     opacity: 1;
     pointer-events: auto;
-  }
-  
-  .modal-window>div {
+}
+
+.modal-window>div {
     width: 800px;
     position: relative;
-    margin: 10% auto;
+    margin: 7% auto;
     padding: 2rem;
     background: #fff;
     color: #444;
     border: 5px solid lightgrey;
     border-radius: 10px;
-  }
-  
-  .modal-window header {
-    font-weight: bold;
-  }
-  
+}
 
 @media (min-width: 48em) {
 
